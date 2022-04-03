@@ -1,6 +1,7 @@
 import re
 import pandas as pd
 import requests
+import gspread
 
 class Handler:
 

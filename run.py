@@ -1,5 +1,8 @@
 from pipeline import Handler
 from database import con
+
+from oauth2client.service_account import ServiceAccountCredentials
+import json
 token = 'secret_WHETRF7v6E86YaJdaaFG9RyfRdwIwz9plsHBGAVYVug'
 databaseId = '89799373e1bc4c459c146aa934a5b655' # общение с лидами
 
