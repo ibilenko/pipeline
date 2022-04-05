@@ -108,7 +108,7 @@ class Handler:
         lg_sheet.update([df_new.columns.values.tolist()] + df_new.values.tolist())
 
     def get_postgre(self):
-        self.df_postgre = pd.read_sql('''select * from link.potential_clients where send_status!='con_sended' ''', self.con)
+        self.df_postgre = pd.read_sql('''select * from link.potential_clients where send_status = 'con_sended' ''', self.con)
 
     def main(self):
         self.get_notion()
